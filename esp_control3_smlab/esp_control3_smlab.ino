@@ -25,11 +25,11 @@ LiquidCrystal_I2C lcd(0x27,20,4);  // set the LCD address to 0x27 for a 16 chars
 
 int col = 20;
 int row = 4;
-const char* ssid = "smlab";
-const char* password =  "igcsm123";
+const char* ssid = "";
+const char* password =  "";
  
 const uint16_t port = 8090;
-const char * host = "192.168.1.236";
+const char * host = "";
 
 int buttonPushCounter = 0;   // counter for the number of button presses
 int buttonState = 0;         // current state of the button

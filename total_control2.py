@@ -172,20 +172,24 @@ def lights_control():
 if __name__ == '__main__':
  
     while True:
-        client, addr = s.accept()
-        while True:
-            content = client.recv(32)
-            content_str = content.decode('utf-8')
-            # print(content)
-            # time.sleep(0.5)
-            if len(content_str) == 0:
-                break
 
-            else:
-
-                print(content_str)
 
         try:
+            client, addr = s.accept()
+            while True:
+                content = client.recv(32)
+                content_str = content.decode('utf-8')
+                # print(content)
+                # time.sleep(0.5)
+                if len(content_str) == 0:
+                    break
+
+                else:
+
+                    print(content_str)
+
+            print("guwda")
+            print(content_str)
             # Check if it's time to take input
             if time.time() - last_command_time >= INPUT_INTERVAL:
                 # Take input from the keyboard

@@ -182,11 +182,12 @@ if __name__ == '__main__':
                 # print(content)
                 # time.sleep(0.5)
                 if len(content_str) == 0:
-                    break
+                    print("nothing")
 
                 else:
 
                     print(content_str)
+                    break
 
             print("guwda")
             print(content_str)

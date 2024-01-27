@@ -227,17 +227,17 @@ if __name__ == '__main__':
                     coord[1] = 0
                     coord[2] = 0
                     # Code to control the backward motion of the robot
-                elif keyboard.is_pressed('z'):
+                elif (content_str=="Z"):
                     coord[0] = 0
                     coord[1] = 0
                     coord[2] = 0
                     coord[3] = 0
  
                 # arm link 1 control
-                if keyboard.is_pressed('t'):
+                if (content_str == "T"):
                     coord[4] = coord[4] + 1
- 
-                elif keyboard.is_pressed('g'):
+
+                elif (content_str == "G"):
                     coord[4] = coord[4] - 1
                     # Code to control the sideways motion to the right of the robot
  
@@ -246,11 +246,11 @@ if __name__ == '__main__':
                     # Code to control the forward motion of the robot
  
                 # arm link2
-                if keyboard.is_pressed('y'):
+                if (content_str == "Y"):
                     coord[5] = coord[5] + 1
                     # Code to control the sideways motion to the left of the robot
  
-                elif keyboard.is_pressed('h'):
+                elif (content_str == "H"):
                     coord[5] = coord[5] - 1
                     # Code to control the sideways motion to the right of the robot
  
@@ -259,11 +259,11 @@ if __name__ == '__main__':
                     # Code to control the forward motion of the robot
  
                 # link3
-                if keyboard.is_pressed('u'):
+                if (content_str == "U"):
                     coord[6] = coord[6] + 1
                     # Code to control the sideways motion to the left of the robot
  
-                elif keyboard.is_pressed('j'):
+                elif (content_str == "J"):
                     coord[6] = coord[6] - 1
                     # Code to control the sideways motion to the right of the robot
  
@@ -272,11 +272,11 @@ if __name__ == '__main__':
                     # Code to control the forward motion of the robot
  
                 # link 4
-                if keyboard.is_pressed('i'):
+                if (content_str == "I"):
                     coord[7] = coord[7] + 1
                     # Code to control the sideways motion to the left of the robot
  
-                elif keyboard.is_pressed('k'):
+                elif (content_str == "K"):
                     coord[7] = coord[7] - 1
                     # Code to control the sideways motion to the right of the robot
  
@@ -285,11 +285,11 @@ if __name__ == '__main__':
                     # Code to control the forward motion of the robot
  
                 # link 5
-                if keyboard.is_pressed('o'):
+                if (content_str == "O"):
                     coord[8] = coord[8] + 1
                     # Code to control the sideways motion to the left of the robot
  
-                elif keyboard.is_pressed('l'):
+                elif (content_str == "L"):
                     coord[8] = coord[8] - 1
                     # Code to control the sideways motion to the right of the robot
  
@@ -298,7 +298,7 @@ if __name__ == '__main__':
                     # Code to control the forward motion of the robot
  
                 # servo
-                if keyboard.is_pressed('p'):
+                if (content_str == "P"):
                     coord[9] = coord[9] + 1
                     # Code to control the sideways motion to the left of the robot
  

@@ -232,6 +232,14 @@ if __name__ == '__main__':
                     coord[1] = 0
                     coord[2] = 0
                     coord[3] = 0
+                    coord[4] = 0
+                    coord[5] = 0
+                    coord[6] = 0
+                    coord[7] = 0
+                    coord[8] = 0
+                    coord[9] = 0
+                    
+
  
                 # arm link 1 control
                 if (content_str == "T"):
